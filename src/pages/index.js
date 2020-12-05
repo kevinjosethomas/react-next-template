@@ -6,6 +6,16 @@ import { DefaultLayout } from "../layouts/DefaultLayout";
 const Home = (props) => {
   return (
     <DefaultLayout>
+      <Head>
+        <meta name="description" content="ReactJS and NextJS frontend template for my projects, maybe you could use it too!" />
+        <meta name="author" content="TrustedMercury" />
+
+        <meta name="title" content="React Next Template" />
+        <meta property="og:title" content="React Next Template" />
+        <meta property="og:description" content="ReactJS and NextJS frontend template for my projects, maybe you could use it too!" />
+        <meta property="twitter:title" content="React Next Template" />
+        <meta property="twitter:description" content="ReactJS and NextJS frontend template for my projects, maybe you could use it too!" />
+      </Head>
       <div className="flex flex-col items-center justify-center h-full text-center">
         <motion.span
           className="text-5xl md:text-8xl text-gray-300 font-semibold font-inter"
