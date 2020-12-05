@@ -9,14 +9,14 @@ const Server = (props) => {
   return (
     <Fragment>
       <Head>
-        <meta name="description" content="ReactJS and NextJS frontend template for my projects, maybe you could use it too!" />
+        <meta name="description" content={props.metadata} />
         <meta name="author" content="TrustedMercury" />
 
         <meta name="title" content="React Next Template" />
         <meta property="og:title" content="React Next Template" />
-        <meta property="og:description" content="ReactJS and NextJS frontend template for my projects, maybe you could use it too!" />
+        <meta property="og:description" content={props.metadata} />
         <meta property="twitter:title" content="React Next Template" />
-        <meta property="twitter:description" content="ReactJS and NextJS frontend template for my projects, maybe you could use it too!" />
+        <meta property="twitter:description" content={props.metadata} />
       </Head>
       <DefaultLayout>
         <div className="flex flex-col items-center justify-center h-full text-center">
