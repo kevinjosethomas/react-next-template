@@ -8,13 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "axios": "^0.21.0",
-    "framer-motion": "^2.9.5",
-    "next": "10.0.3",
-    "postcss": "^8.1.13",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "tailwindcss": "^2.0.1"
+    "axios": "^0.22.0",
+    "framer-motion": "^4.1.17",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "next-sitemap": "^1.6.168",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
   }
 }
