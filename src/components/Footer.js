@@ -1,4 +1,4 @@
-export const Footer = (props) => {
+export default function Footer() {
   return (
     <div className="flex flex-col items-center justify-between w-screen py-6 md:flex-row bg-dark-200">
       <div className="flex flex-row items-center justify-center mb-6 text-center md:mb-0 md:ml-16">
@@ -27,4 +27,4 @@ export const Footer = (props) => {
       </div>
     </div>
   );
-};
+}

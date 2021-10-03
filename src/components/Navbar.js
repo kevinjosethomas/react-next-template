@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState, Fragment } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-
-import { MobileNav } from "./MobileNav";
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import MobileNav from "./MobileNav";
 
 export const useNavbarState = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +12,12 @@ export const useNavbarState = () => {
   };
 };
 
-export const Navbar = (props) => {
+export default function Navbar() {
   const router = useRouter();
   const { isOpen, setIsOpen } = useNavbarState();
 
   return (
-    <Fragment>
+    <>
       <nav className="flex flex-row items-center justify-end w-screen py-8 border-b-2 md:justify-between bg-dark-200 border-emph-200">
         <div className="flex-row items-center justify-center hidden ml-16 md:flex">
           <Link href="/">
@@ -76,6 +75,6 @@ export const Navbar = (props) => {
       <AnimatePresence>
         {isOpen && <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />}
       </AnimatePresence>
-    </Fragment>
+    </>
   );
-};
+}

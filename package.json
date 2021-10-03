@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "axios": "^0.22.0",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^2.9.5",
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.2.6",
     "next-sitemap": "^1.6.168",
-    "postcss": "^8.3.8",
+    "postcss": "^8.3.5",
     "tailwindcss": "^2.2.16"
   }
 }
